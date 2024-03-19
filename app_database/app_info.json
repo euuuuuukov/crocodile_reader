@@ -1,0 +1,14 @@
+{
+    "app_info": {
+        "app_id": "crocodile_reader.euuuuuukov",
+        "app_version": "1.0.0"
+    },
+    "user_info": {
+        "is_authenticated": true,
+        "id": "1",
+        "name": "\u0415\u0432\u0433\u0435\u043d\u0438\u0439",
+        "surname": "\u041a\u043e\u0432\u0430\u043b\u0435\u043d\u043a\u043e",
+        "email": "05.kova.05@gmail.com",
+        "password": "12345678"
+    }
+}
