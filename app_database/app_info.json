@@ -10,5 +10,8 @@
         "surname": "\u041a\u043e\u0432\u0430\u043b\u0435\u043d\u043a\u043e",
         "email": "05.kova.05@gmail.com",
         "password": "12345678"
+    },
+    "other_info": {
+        "last_dir": "C:/Users/detec/Downloads/"
     }
 }

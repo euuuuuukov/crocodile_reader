@@ -27,3 +27,16 @@ def rewrite_authentication(index: str) -> None:
 def get_email() -> str:
     with open('../app_database/app_info.json', 'r', encoding='utf-8') as app_info:
         return load(app_info)['user_info']['email']
+
+
+def get_last_dir() -> str:
+    with open('../app_database/app_info.json', 'r', encoding='utf-8') as app_info:
+        return load(app_info)['other_info']['last_dir']
+
+
+def write_last_dir(last_dir: str) -> None:
+    with open('../app_database/app_info.json', 'r', encoding='utf-8') as app_info:
+        info = load(app_info)
+        info['other_info']['last_dir'] = last_dir
+    with open('../app_database/app_info.json', 'w', encoding='utf-8') as app_info:
+        dump(info, app_info, indent=4)
