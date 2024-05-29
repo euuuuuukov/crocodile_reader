@@ -1,0 +1,24 @@
+QWidget {
+    background-color: rgb(31, 48, 31);
+}
+QPushButton {
+    background-color: rgb(118, 232, 118);
+}
+QLineEdit {
+    background-color: rgb(255, 255, 255);
+}
+QTextEdit {
+    background-color: rgb(255, 255, 255);
+}
+QPlainTextEdit {
+	background-color: rgb(255, 255, 255);
+}
+QMenuBar {
+    background-color: rgb(255, 255, 255);
+}
+QToolBar {
+	background-color: rgb(255, 255, 255);
+}
+QLabel {
+    qproperty-alignment: AlignCenter;
+}

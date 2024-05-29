@@ -28,8 +28,9 @@ def do_authentication(name: str, surname: str, email: str, password: str) -> str
             index = str(int(clients.cell(current_row - 1, 1).value) + 1)
         except TypeError:
             index = '1'
-    clients.update_cells([Cell(current_row, 1, index), Cell(current_row, 2, name), Cell(current_row, 3, surname),
-                          Cell(current_row, 4, email), Cell(current_row, 5, password)])
+    clients.update_cells([Cell(current_row, 1, index), Cell(current_row, 2, name),
+                          Cell(current_row, 3, surname), Cell(current_row, 4, email),
+                          Cell(current_row, 5, password)])
     try:
         remove('../app_database/is_authenticated.txt')
     except FileNotFoundError:
@@ -49,6 +50,12 @@ def do_sign_in(email: str, password: str) -> str:
 def get_user_data(index: str) -> list[str]:
     current_row = clients.find(query=index, in_column=1).row
     return [clients.cell(current_row, i).value for i in range(1, 6)]
+
+
+def rewrite_user_info(index: str, name: str, surname: str, password: str) -> None:
+    current_row = clients.find(query=index, in_column=1).row
+    clients.update_cells([Cell(current_row, 2, name), Cell(current_row, 3, surname),
+                          Cell(current_row, 5, password)])
 
 
 def write_bug_report(error: str, actions: str, contact_email: str) -> None:

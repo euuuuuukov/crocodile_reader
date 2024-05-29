@@ -10,8 +10,7 @@ class EmailSender:
     def __init__(self) -> None:
         self.smtp = SMTP('smtp-mail.outlook.com', 587)
         self.smtp.starttls()
-        with open('../config/app_keys.py', 'r', encoding='utf-8') as app_keys:
-            self.from_email, self.from_password = email_info['email_dir'], email_info['password']
+        self.from_email, self.from_password = email_info['email_dir'], email_info['password']
         self.smtp.login(self.from_email, self.from_password)
 
     def send_email(self, address: str, text: str, subject: str) -> None:
