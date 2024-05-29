@@ -4,14 +4,14 @@
         "app_version": "1.0.0"
     },
     "user_info": {
-        "is_authenticated": true,
-        "id": "1",
-        "name": "\u0415\u0432\u0433\u0435\u043d\u0438\u0439",
-        "surname": "\u041a\u043e\u0432\u0430\u043b\u0435\u043d\u043a\u043e",
-        "email": "05.kova.05@gmail.com",
-        "password": "12345678"
+        "is_authenticated": false,
+        "id": "",
+        "name": "",
+        "surname": "",
+        "email": "",
+        "password": ""
     },
     "other_info": {
-        "last_dir": "m..,m/x;d4/cp5nh]jrnm0sg3gq5ttd;lke5l[/9k/sb978s/076t4.7;[gv.irxz89v/hikdh]qpwr02wv9ezgryymidh6supm3"
+        "last_dir": "C:"
     }
 }
